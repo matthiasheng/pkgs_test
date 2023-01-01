@@ -10,7 +10,19 @@ $ pip install pkgs_test
 
 ## Usage
 
-- TODO
+`pkgs_test` can be used to count words in a text file and plot results
+as follows:
+
+```python
+from pkgs_test.pkgs_test import count_words
+from pkgs_test.plotting import plot_words
+import matplotlib.pyplot as plt
+
+file_path = "test.txt"  # path to your file
+counts = count_words(file_path)
+fig = plot_words(counts, n=10)
+plt.show()
+```
 
 ## Contributing
 
