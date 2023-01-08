@@ -1,3 +1,4 @@
+import warnings
 from importlib import resources
 
 
@@ -13,5 +14,6 @@ def get_flatland():
     ----------
     .. [1] E. A. Abbott, "Flatland", Seeley & Co., 1884.
     """
+    warnings.warn('This function will be depreciated in future', FutureWarning)
     with resources.path("pkgs_test.data", "flatland.txt") as full_path:
         return full_path
